@@ -49,3 +49,14 @@ button:hover {
     display: block;
     margin: 0 auto;
 }
+
+.h{
+    position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-size: 10px;
+        opacity: 0.5;
+        pointer-events: none;
+        z-index: -1;
+}
