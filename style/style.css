@@ -43,3 +43,9 @@ button:hover {
     cursor: pointer;
     margin: 20px 0;
 }
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}

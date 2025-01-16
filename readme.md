@@ -89,8 +89,7 @@ Ce projet propose une série de puzzles interactifs conçus pour tester les comp
 │   ├── trophy.png      # Trophée pour la victoire
 │   ├── audio-icon.png  # Icône pour le puzzle audio
 │   └── classic.png     # Image cryptée
-└── audio/
-    └── mystery-audio.mp3 # Fichier audio pour le Puzzle 3
+
 ```
 
 ---
@@ -104,6 +103,7 @@ graph TD
     C --> D[Puzzle 3 : Audio Mystère]
     D --> E[Puzzle 4 : Labyrinthe de Liens]
     E --> F[Puzzle 5 : Coffre Final]
+    E --> H[Salle Secrète]
     F --> G[Page de Victoire]
 ```
 
@@ -130,9 +130,5 @@ graph TD
 - Ajustez les couleurs et le style dans `style.css`.
 
 ---
-
-## Remerciements
-
-Ce projet a été conçu pour rendre hommage à l'école CESI et pour offrir une expérience ludique et éducative. Merci d'avoir joué !
 
 😊 **Bonne chance et amusez-vous bien !**
