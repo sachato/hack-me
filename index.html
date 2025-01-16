@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue au CESI</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-cesi.png" alt="Logo du CESI" class="logo">
+        <h1>Bienvenue au CESI</h1>
+    </header>
+    <main>
+        <p>Oops... Il semble qu'une erreur se soit glissée sur cette page.</p>
+        <p>Peux-tu la trouver et la corriger ?</p>
+        <form id="password-form">
+            <label for="password">Entrez le mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Mot de passe">
+            <button type="submit">Valider</button>
+        </form>
+        <p id="error-message" class="hidden">Mot de passe incorrect. Réessayez !</p>
+        <!-- Indice : Le mot de passe est 'CESI2025' -->
+    </main>
+    <footer>
+        <p>&copy; 2025 CESI. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+form {
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+#error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.mystery-image {
+    width: 300px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}

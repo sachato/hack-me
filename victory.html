@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoire ! 🎉</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #003366;
+            color: #FFD700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            margin-top: 50px;
+        }
+        .trophy {
+            width: 200px;
+            margin: 20px auto;
+        }
+        main {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+        .confetti {
+            font-size: 4em;
+            margin: 10px 0;
+            animation: confetti-animation 2s infinite;
+        }
+        @keyframes confetti-animation {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Félicitations ! Vous avez réussi ! 🎉</h1>
+    </header>
+    <main>
+        <div class="confetti">🎊 🎊 🎊</div>
+        <p>Bravo, vous avez ouvert le coffre final et complété tous les puzzles. 🎁</p>
+        <img src="./img/trophy.png" alt="Trophée de victoire" class="trophy">
+        <p>Merci d'avoir participé ! Vous êtes un véritable hacker du CESI. 💻</p>
+        <a href="index.html" style="color: #FFD700; text-decoration: underline;">Retourner à l'accueil</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 CESI. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
