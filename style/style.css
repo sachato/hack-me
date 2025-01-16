@@ -50,6 +50,12 @@ button:hover {
     margin: 0 auto;
 }
 
+.logo2 {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
 .h{
     position: absolute;
         bottom: 10px;

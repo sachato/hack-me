@@ -12,31 +12,63 @@
             color: #FFD700;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         header {
             margin-top: 50px;
         }
+
         .trophy {
             width: 200px;
             margin: 20px auto;
         }
+
         main {
             margin-top: 30px;
             font-size: 1.2em;
         }
+
         .confetti {
             font-size: 4em;
             margin: 10px 0;
             animation: confetti-animation 2s infinite;
         }
+
         @keyframes confetti-animation {
             0% { transform: rotate(0deg); }
             50% { transform: rotate(15deg); }
             100% { transform: rotate(0deg); }
         }
+
         footer {
             margin-top: 50px;
             font-size: 0.8em;
             color: #FFFFFF;
+        }
+
+        /* Flash styling */
+        .flash-text {
+            display: none;
+            font-size: 5em;
+            color: red;
+            background-color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .large-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black url('./img/large-image.png') no-repeat center center;
+            background-size: contain;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -54,5 +86,39 @@
     <footer>
         <p>&copy; 2025 CESI. Tous droits réservés.</p>
     </footer>
+
+    <!-- Flash Text -->
+    <div id="flash-text" class="flash-text">PAIE LA CVEC</div>
+    <!-- Large Image -->
+    <div id="large-image" class="large-image"><img src="./img/cvec.webp" alt="Logo du CESI" class=""></div>
+
+    <script>
+        function startFlashes() {
+            const flashText = document.getElementById('flash-text');
+            const largeImage = document.getElementById('large-image');
+            let flashCount = 0;
+
+            // Flashing "PAIE LA CVEC" 5 times
+            const flashInterval = setInterval(() => {
+                flashText.style.display = flashText.style.display === 'none' ? 'block' : 'none';
+                flashCount++;
+
+                // Stop flashing after 5 flashes (0.3s each)
+                if (flashCount >= 10) {
+                    clearInterval(flashInterval);
+                    flashText.style.display = 'none';
+
+                    // Show the large image for 1 second
+                    largeImage.style.display = 'block';
+                    setTimeout(() => {
+                        largeImage.style.display = 'none';
+                    }, 1000);
+                }
+            }, 300);
+        }
+
+        // Start the flashes and image sequence on page load
+        window.onload = startFlashes;
+    </script>
 </body>
 </html>
